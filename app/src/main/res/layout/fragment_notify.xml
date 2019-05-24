@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Snooow on 2019/5/10
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.seclass.snappat.modules.notify.NotifyFragment">
+
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_60"
+    android:contentDescription="@string/top_bar_bg"
+    android:scaleType="fitXY"
+    android:src="@mipmap/person_bg"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dimens_60"
+      android:gravity="center_vertical">
+
+      <TextView
+        android:id="@+id/name"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/notification_title_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_19"/>
+
+    </RelativeLayout>
+    <include layout="@layout/fragment_msg_list"/>
+  </LinearLayout>
+
+</RelativeLayout>
